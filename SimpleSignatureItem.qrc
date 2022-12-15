@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>SignatureItem.qml</file>
+        <file>signature_pad/bezier.js</file>
+        <file>signature_pad/PadTimer.qml</file>
+        <file>signature_pad/point.js</file>
+        <file>signature_pad/signature_pad.js</file>
+        <file>signature_pad/throttle.js</file>
+    </qresource>
+</RCC>
