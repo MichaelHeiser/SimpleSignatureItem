@@ -14,7 +14,7 @@ Rectangle {
     property string loadedImageUrl: ""
 
     // used to modify max line width of signature
-    property int maxLineWidth: 2
+    property real maxLineWidth: 2
     // pon color of signature
     property color drawColor: "black"
 
@@ -139,9 +139,11 @@ Rectangle {
             // I have a function of a timer called delayedTask
 
             signaturePad = new SignaturePad.SignaturePad(canvas, {
-              // It's Necessary to use an opaque color when saving image as JPEG;
-              // this option can be omitted if only saving as PNG or SVG
-              backgroundColor: 'rgb(255, 255, 255)'
+                // It's Necessary to use an opaque color when saving image as JPEG;
+                // this option can be omitted if only saving as PNG or SVG
+                backgroundColor: 'rgb(255, 255, 255)',
+                maxWidth: root.maxLineWidth,
+                penColor: root.drawColor
             });
         }
     }
